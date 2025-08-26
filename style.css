@@ -186,3 +186,18 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Glowing effect for buttons */
+.glow-btn {
+    box-shadow: 0 0 16px 4px #f87171, 0 0 32px 8px #f87171;
+    animation: glowPulse 1.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 8px 2px #f87171, 0 0 16px 4px #f87171;
+    }
+    100% {
+        box-shadow: 0 0 24px 8px #f87171, 0 0 48px 16px #f87171;
+    }
+}
