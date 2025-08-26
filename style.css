@@ -188,16 +188,26 @@ body {
 }
 
 /* Glowing effect for buttons */
-.glow-btn {
-    box-shadow: 0 0 16px 4px #f87171, 0 0 32px 8px #f87171;
-    animation: glowPulse 1.5s infinite alternate;
+.glow-text {
+    color: #fff;
+    text-shadow:
+      0 0 8px #94a3b8,   /* slate-400 */
+      0 0 16px #64748b,  /* slate-500 */
+      0 0 24px #475569;  /* slate-600 */
+    animation: textGlowPulseGrey 1.5s infinite alternate;
 }
 
-@keyframes glowPulse {
+@keyframes textGlowPulseGrey {
     0% {
-        box-shadow: 0 0 8px 2px #f87171, 0 0 16px 4px #f87171;
+        text-shadow:
+          0 0 4px #94a3b8,
+          0 0 8px #64748b,
+          0 0 16px #475569;
     }
     100% {
-        box-shadow: 0 0 24px 8px #f87171, 0 0 48px 16px #f87171;
+        text-shadow:
+          0 0 12px #94a3b8,
+          0 0 24px #64748b,
+          0 0 48px #475569;
     }
 }
