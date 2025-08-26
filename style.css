@@ -130,7 +130,13 @@ body {
 
 /* Popup Modal Specific Styles */
 .modal-content-offset {
-    transform: translateY(-95px); /* Adjust this value as needed to move the modal up */
+    transform: none;
+}
+
+@media (min-width: 768px) {
+    .modal-content-offset {
+        transform: translateY(-95px);
+    }
 }
 
 /* Features & Amenities Section (from the duplicated section in index.html) */
